@@ -10,7 +10,7 @@
 In this React Web application, I developed a micro-calculator capable of performing sums, display results and a brief history of the equations.
 
 - [Vite](https://vitejs.dev/)
-- [ReactJS](https://pt-br.reactjs.org/)
+- [React](https://pt-br.reactjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Twin + styled-components](https://github.com/ben-rogerson/twin.macro)
 
