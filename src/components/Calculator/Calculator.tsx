@@ -2,7 +2,12 @@ import { useState } from "react";
 import { Digit, Operator } from "../Button/ButtonType";
 import Display from "../Display/Display";
 import Keypad from "../Keypad/Keypad";
-import { StyledCalculatorBody, StyledCalculatorCard } from "./StyledCalculator";
+import {
+  StyledCalculatorBody,
+  StyledCalculatorCard,
+  StyledCalculatorCardSeparator,
+  StyledCalculatorCardTitle,
+} from "./StyledCalculator";
 
 const Calculator = () => {
   const [display, setDisplay] = useState("0");
@@ -83,11 +88,11 @@ const Calculator = () => {
   return (
     <StyledCalculatorBody>
       <StyledCalculatorCard>
-        <h5 className="text-center font-light text-lg text-gray-500">
+        <StyledCalculatorCardTitle>
           {import.meta.env.VITE_APP_TITLE ?? "Micro Calculator"}
-        </h5>
+        </StyledCalculatorCardTitle>
         <Display result={display} history={history()} />
-        <hr className="my-6 border-gray-100" />
+        <StyledCalculatorCardSeparator className="my-6" />
         <Keypad
           onDigitButtonClick={onDigitButtonClick}
           onOperatorButtonClick={onOperatorButtonClick}
