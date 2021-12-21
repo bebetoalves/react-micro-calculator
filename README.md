@@ -40,4 +40,4 @@ $ yarn dev or npm run dev
 
 ---
 
-Made with :coffe: by Bebeto Alves
+Made with :coffee: by Bebeto Alves
